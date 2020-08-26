@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sys_code">
+    <!-- 查询菜单数据 -->
+    <select id="queryMenu" resultType="HashMap">
+        SELECT kid,title,pid,path,level FROM sys_core_menu
+    </select>
+</mapper>
